@@ -1,0 +1,84 @@
+mat-toolbar{
+  height: 60px;
+  background-color: #726197;
+  border:  2px solid gray;
+}
+
+h1{
+  color: white;
+  font-family: segoe script;
+  font-size: 30px;
+  position: relative;
+  left: 478px;
+}
+
+.tabs{
+  height: 42px;
+  background-color: #807499;
+  position: relative;
+  bottom: 15px;
+}
+
+h2{
+  color: rgb(36, 16, 9);
+  font-family: segoe script;
+  font-size: 17px;
+  margin-left: 9px;
+}
+
+.link{
+  text-decoration: none;
+}
+
+form{
+position: relative;
+left: 742px;
+
+}
+
+.btn{
+  background-color: #2adbe7;
+  color: white;
+  font-family: segoe script;
+  border: 2px solid gray;
+}
+
+.card{
+  position: relative;
+  left: 500px;
+  bottom: 200px;
+  height: 250px;
+  background-color: #9e8bc7;
+  border-radius: 20px;
+}
+
+h3{
+  color: white;
+  font-family: segoe script;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+.email,.senha{
+  color: white;
+  font-family: segoe script;
+  font-size: 12px;
+  text-align: center;
+}
+
+h6{
+  color: white;
+  font-family: segoe script;
+  font-size: 15px;
+  position: relative;
+  left: 640px;
+  bottom: 90px;
+}
+
+hr{
+  position: relative;
+  bottom: 90px;
+
+}
