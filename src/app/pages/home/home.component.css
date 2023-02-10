@@ -1,0 +1,39 @@
+.container{
+  position: relative;
+  right: 100px;
+  bottom: 110px;
+
+}
+
+.carousel{
+  border:  2px solid grey;
+  border-radius: 12px;
+}
+
+.containerPedidos{
+  text-align: center;
+  color: white;
+  font-size: 23px;
+  font-family: segoe script;
+  margin-top: 10px;
+  height: 250px;
+  background-color: rgb(80, 51, 51);
+  border:  2px solid grey;
+  border-radius: 8px;
+}
+
+
+.containerProdutos{
+  background-color: rgb(80, 51, 51);
+ position: relative;
+ left: 378px;
+ bottom: 250px;
+ height: 250px;
+ border:  2px solid grey;
+ border-radius: 8px;
+ text-align: center;
+ color: white;
+ font-size: 23px;
+ font-family: segoe script;
+
+}

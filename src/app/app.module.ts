@@ -27,6 +27,7 @@ import { LoginModule } from './pages';
     AppRoutingModule,
 
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
