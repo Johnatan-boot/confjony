@@ -37,3 +37,61 @@
  font-family: segoe script;
 
 }
+
+.sidebarNovidades{
+  position:relative;
+  left:900px;
+  bottom:820px;
+  background-color: #6b51a5;
+  width: 430px;
+  height: 570px;
+}
+
+.title_novidades{
+  text-align: center;
+  font-family: segoe script;
+  color: rgb(36, 16, 9);
+  font-size: 18px;
+
+
+}
+
+.card{
+  position: relative;
+  left: 80px;
+  background-color:  #2adbe7;
+}
+
+.card-img-top{
+  height: 60px;
+  width: 60px;
+  position: relative;
+  left: 110px;
+}
+
+.card-title{
+  text-align: center;
+  color: white;
+  font-family: segoe script;
+
+}
+
+.card-text{
+  text-align: center;
+}
+
+.btn{
+  position: relative;
+  left: 65px;
+  background-color:  rgb(36, 16, 9);
+  border:  2px solid grey;
+  font-family: segoe script;
+
+
+}
+
+.row{
+  position: relative;
+  left: 12px;
+  margin-top: 5px;
+}
