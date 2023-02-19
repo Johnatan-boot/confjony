@@ -36,9 +36,12 @@
     <button class="btn btn" type="submit">Search</button>
   </form>
 </ul>
+<button routerLink="cart" class="btncart ">
+  <i style="font-size: 30px;" class="fa fa-cart-plus"></i>
+  <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+</button>
 </div>
 <div [ngbNavOutlet]="nav" class="mt-2"></div>
-
 
 <footer>
   <hr>

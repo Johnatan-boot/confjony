@@ -3,3 +3,12 @@
 body{
   background-color: #7e69ad;
 }
+
+.title{
+  color: white;
+  font-family: segoe script;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+}
