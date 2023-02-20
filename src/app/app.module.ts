@@ -1,3 +1,4 @@
+import { CartRoutingModule } from './pages/cart/cart-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { LoginRoutingModule } from './pages/autenticacao/login/login-routing.module';
 import { NgModule } from '@angular/core';
@@ -12,10 +13,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeRoutingModule } from './pages/home/home-houting.module';
 import { HomeModule } from './pages/home.module';
 import { LoginModule, ProductsModule, ProductsRoutingModule } from './pages';
+import { CartComponent } from './pages/cart/components';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    CartComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,6 +34,11 @@ import { LoginModule, ProductsModule, ProductsRoutingModule } from './pages';
     HomeRoutingModule,
     ProductsModule,
     ProductsRoutingModule,
+    CartRoutingModule,
+
+
+
+
 
     AppRoutingModule,
 
