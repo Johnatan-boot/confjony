@@ -3,6 +3,7 @@ strong{
   color:white;
 }
 .card {
+
   height: 60vh;
   margin: 25px;
   padding: 25px;
@@ -43,6 +44,7 @@ h6 {
 
 .card-table {
   position: relative;
+  bottom: 100px;
   display: flex;
   flex-direction: column;
   min-width: none;
