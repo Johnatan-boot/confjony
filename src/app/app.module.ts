@@ -19,6 +19,7 @@ import { LoginModule, ProductsModule, ProductsRoutingModule } from './pages';
 import { CartComponent } from './pages/cart/components';
 import { CadastroRoutingModule } from './pages/cadastro';
 import { PerfilComponent } from './pages/perfil/perfil.component';
+import { ListPedidosModule, ListPedidosRoutingModule } from './pages/list-pedidos';
 
 
 @NgModule({
@@ -44,6 +45,8 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
     CartRoutingModule,
     CadastroModule,
     CadastroRoutingModule,
+    ListPedidosModule,
+    ListPedidosRoutingModule,
    
 
 

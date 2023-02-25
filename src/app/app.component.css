@@ -124,3 +124,7 @@ footer{
   position: relative;
   top: 650px;
 }
+
+a{
+  text-decoration: none;
+}

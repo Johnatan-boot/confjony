@@ -1,0 +1,51 @@
+.img_pedidos{
+  position: relative;
+  right: 10px;
+  bottom: 118px;
+}
+
+.container{
+  position: relative;
+  bottom: 220px;
+}
+.table_h3{
+  text-align: center;
+  color: rgb(226, 21, 21);
+  font-family: segoe script;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  bottom: 40px;
+}
+
+.btn{
+  margin-right: 6px;
+}
+
+.label2,.label3,
+.label5,.label6 {
+  position: relative;
+  left: 80px;
+}
+
+.label1{
+  position: relative;
+  right: 7px;
+}
+.label4{
+  position: relative;
+  left: 172px;
+}
+.label6{
+  position: relative;
+  left: 195px;
+}
+.label5{
+  position: relative;
+  left: 105px;
+}
+
+.label7,.label8 {
+  position: relative;
+  left: 150px;
+}
