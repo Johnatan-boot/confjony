@@ -20,6 +20,10 @@ import { CartComponent } from './pages/cart/components';
 import { CadastroRoutingModule } from './pages/cadastro';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { ListPedidosModule, ListPedidosRoutingModule } from './pages/list-pedidos';
+import { OrcamentosComponent } from './pages/orcamentos/orcamentos.component';
+import { MatOptionModule } from '@angular/material/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -27,6 +31,7 @@ import { ListPedidosModule, ListPedidosRoutingModule } from './pages/list-pedido
     AppComponent,
     CartComponent,
     PerfilComponent,
+    OrcamentosComponent,
 
   ],
   imports: [
@@ -34,6 +39,10 @@ import { ListPedidosModule, ListPedidosRoutingModule } from './pages/list-pedido
     MatToolbarModule,
     HttpClientModule,
     MatCardModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatOptionModule,
     NgbModule,
     SharedModule,
     LoginModule,
