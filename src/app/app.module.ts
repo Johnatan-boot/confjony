@@ -1,3 +1,4 @@
+import { MatCardModule } from '@angular/material/card';
 import { CadastroModule } from './pages/cadastro/cadastro.module';
 
 import { CartRoutingModule } from './pages/cart/cart-routing.module';
@@ -17,18 +18,21 @@ import { HomeModule } from './pages/home.module';
 import { LoginModule, ProductsModule, ProductsRoutingModule } from './pages';
 import { CartComponent } from './pages/cart/components';
 import { CadastroRoutingModule } from './pages/cadastro';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CartComponent,
+    PerfilComponent,
 
   ],
   imports: [
     BrowserModule,
     MatToolbarModule,
     HttpClientModule,
+    MatCardModule,
     NgbModule,
     SharedModule,
     LoginModule,
