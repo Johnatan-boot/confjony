@@ -43,6 +43,32 @@ left: 742px;
   border: 2px solid gray;
 }
 
+.btnLogin{
+  height: 38px;
+  width: 40px;
+  background-color: #fa0338;
+  position: relative;
+  left: 830px;
+  bottom: 46px;
+  border: 2px solid gray;
+
+
+}
+.btnCadastro{
+  height: 38px;
+  width: 40px;
+  background-color: #20fa03;
+  position: relative;
+  left: 835px;
+  bottom: 46px;
+  border: 2px solid gray;
+
+}
+.btnCadastro:hover{
+ 
+  background-color: #32ca1e;
+}
+
 .card{
   position: relative;
   left: 500px;

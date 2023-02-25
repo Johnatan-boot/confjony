@@ -5,7 +5,7 @@
 <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
 	<li [ngbNavItem]="1">
 		<a ngbNavLink>
-      <a class="link" href="">
+      <a class="link" routerLink="/home">
         <h2>Home</h2>
       </a>
   </a>
@@ -24,7 +24,7 @@
 	</li>
 	<li [ngbNavItem]="3">
 		<a ngbNavLink>
-    <a class="link" href="">
+    <a class="link" routerLink="products">
       <h2>Produtos</h2></a>
     </a>
 		<ng-template ngbNavContent>
@@ -36,9 +36,16 @@
     <button class="btn btn" type="submit">Search</button>
   </form>
 </ul>
+
 <button routerLink="cart" class="btncart ">
   <i style="font-size: 30px;" class="fa fa-cart-plus"></i>
   <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+</button>
+<button routerLink="/login" class="btn btn btnLogin">
+  <i class="fa fa-sign-out" aria-hidden="true"></i>
+</button>
+<button routerLink="/cadastro" class="btn btn btnCadastro">
+  <i class="fa fa-plus" aria-hidden="true"></i>
 </button>
 </div>
 <div [ngbNavOutlet]="nav" class="mt-2"></div>

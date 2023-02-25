@@ -1,9 +1,17 @@
+.bannerCadastro{
+  position: relative;
+  bottom: 120px;
+  width: 1348px;
+}
+
 .card{
   position: relative;
   left: 298px;
-  bottom: 80px;
+  bottom: 320px;
   background-color: #3b1f1f;
   color: white;
+  border: 2px solid grey;
+  border-radius: 18px;
 }
 
 .card-title{
