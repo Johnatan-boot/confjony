@@ -22,3 +22,13 @@
   left: 225px;
 
 }
+
+.form-control{
+  height:30px;
+  position: relative;
+  left: 5px;
+}
+
+.email{
+  height: 30px;
+}
