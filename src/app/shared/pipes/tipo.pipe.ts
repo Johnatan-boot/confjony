@@ -1,5 +1,5 @@
-//import { Tipo } from './../../models/tipo.enum';
-/*import { Pipe, PipeTransform } from "@angular/core";
+import { Tipo } from './../../models/tipo.enum';
+import { Pipe, PipeTransform } from "@angular/core";
 
 
 @Pipe({
@@ -33,4 +33,4 @@ export class TipoPipe implements PipeTransform {
   	return tipoDesc;
   }
 
-}I*/
+}

@@ -1,0 +1,24 @@
+.card{
+  position: relative;
+  left: 298px;
+  bottom: 80px;
+  background-color: #3b1f1f;
+  color: white;
+}
+
+.card-title{
+  font-size: 15px;
+  font-family: segoe script;
+  text-align: center;
+ position: relative;
+ bottom: 10px;
+
+}
+
+.btn{
+  background-color: #2adbe7;
+  font-family: segoe script;
+  position: relative;
+  left: 225px;
+
+}

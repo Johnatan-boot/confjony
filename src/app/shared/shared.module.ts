@@ -1,11 +1,12 @@
-//import { DataPipe } from './pipes/data.pipe';
-//import { TipoPipe } from './pipes/tipo.pipe';
+import { TipoPipe } from './pipes/tipo.pipe';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 //import { MatPaginatorIntl } from '@angular/material/paginator';
 
 import { MascaraDirective } from './directives/mascara.directive';
+//import { DataPipe } from './pipes';
 
 
 
@@ -14,14 +15,14 @@ import { MascaraDirective } from './directives/mascara.directive';
     CommonModule,
   ],
   declarations: [
-  	//MascaraDirective,
-  	//TipoPipe,
-  	//DataPipe,
+  	MascaraDirective,
+  	 TipoPipe,
+  	 //DataPipe,
 
   ],
   exports: [
-  	//MascaraDirective,
-  	//TipoPipe,
+  	MascaraDirective,
+  	TipoPipe,
     //DataPipe,
   ],
   providers: [

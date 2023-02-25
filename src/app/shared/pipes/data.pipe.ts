@@ -8,8 +8,8 @@
 })
 export class DataPipe implements PipeTransform {
 
-  /transform(data: string, args?: any): string {
-   // return moment(data).format('DD/MM/YYYY HH:mm:ss');
-  }
+ /* transform(data: string, args?: any): string {
+   return moment(data).format('DD/MM/YYYY HH:mm:ss');
+  }*/
 
-}*/
+
