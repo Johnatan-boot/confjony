@@ -36,6 +36,7 @@ label{
 .subtitle_em{
   position: relative;
   left: 405px;
+  top:4px;
   color: white;
   font-family: segoe script;
 }
@@ -62,6 +63,7 @@ label{
 .input_email{
   position: relative;
   left: 390px;
+  top:8px;
 }
 .input_nome{
   position: relative;
@@ -96,7 +98,7 @@ label{
   position: relative;
   right: 370px;
   position: relative;
-  top: 80px;
+  top: 90px;
 }
 
 .btn_form{
@@ -104,9 +106,41 @@ label{
   color: white;
   font-family: segoe script;
   position: relative;
-  top: 80px;
+  top: 90px;
 
 }
+
+.select_Sabor{
+  color: white;
+  font-family: segoe script;
+  position: relative;
+  right: 6px;
+
+}
+
+select{
+  position: relative;
+  left: 2px;
+  width: 300px;
+}
+
+.select_Tamanho{
+  color: white;
+  font-family: segoe script;
+  position: relative;
+  left: 35px;
+
+}
+
+
+
+.form-check{
+  position: relative;
+  left: 80px;
+}
+
+
+
 
 @media(min-width:320px) and (max-width:768px){
   .bannerOrc{
