@@ -1,3 +1,7 @@
+import { SettingsComponent } from './pages/settings/settings.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SidenavComponent } from './pages/sidenav/sidenav.component';
+import { BodyComponent } from './pages/body/body.component';
 import { MatCardModule } from '@angular/material/card';
 import { CadastroModule } from './pages/cadastro/cadastro.module';
 
@@ -32,7 +36,10 @@ import { MatSelectModule } from '@angular/material/select';
     CartComponent,
     PerfilComponent,
     OrcamentosComponent,
-
+    BodyComponent,
+    SidenavComponent,
+    DashboardComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +63,7 @@ import { MatSelectModule } from '@angular/material/select';
     CadastroRoutingModule,
     ListPedidosModule,
     ListPedidosRoutingModule,
-   
+
 
 
 

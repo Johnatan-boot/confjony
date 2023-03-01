@@ -19,6 +19,12 @@ h1{
   bottom: 15px;
 }
 
+li
+{
+  position: relative;
+  left: 90px;
+}
+
 h2{
   color: rgb(36, 16, 9);
   font-family: segoe script;
@@ -65,7 +71,7 @@ left: 475px;
 
 }
 .btnCadastro:hover{
- 
+
   background-color: #32ca1e;
 }
 
