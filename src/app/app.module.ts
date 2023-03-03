@@ -1,3 +1,4 @@
+import { PagamentosModule } from './pages/pagamentos/pagamentos.module';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SidenavComponent } from './pages/sidenav/sidenav.component';
@@ -28,6 +29,8 @@ import { OrcamentosComponent } from './pages/orcamentos/orcamentos.component';
 import { MatOptionModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { PagamentosRoutingModule } from './pages/pagamentos';
+import { ListorcamentosComponent } from './pages/listorcamentos/listorcamentos.component';
 
 
 @NgModule({
@@ -40,6 +43,7 @@ import { MatSelectModule } from '@angular/material/select';
     SidenavComponent,
     DashboardComponent,
     SettingsComponent,
+    ListorcamentosComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +67,8 @@ import { MatSelectModule } from '@angular/material/select';
     CadastroRoutingModule,
     ListPedidosModule,
     ListPedidosRoutingModule,
+    PagamentosModule,
+    PagamentosRoutingModule,
 
 
 
