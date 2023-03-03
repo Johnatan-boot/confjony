@@ -1,17 +1,17 @@
 import { Observable, catchError, of } from 'rxjs';
 import { Clientes } from 'src/app/models';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { ClientesService } from 'src/app/services';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ErrorDialogComponent } from 'src/app/components/errordialog';
+import { ClientesService } from 'src/app/services/clientes';
+//import { ErrorDialogComponent } from 'src/app/components/errordialog';
 
 @Component({
   selector: 'app-clientes-list',
   changeDetection:ChangeDetectionStrategy.OnPush,
 
   templateUrl: './clientes-list.component.html',
-  styleUrls: ['./clientes-list.component.scss']
+  styleUrls: ['./clientes-list.component.css']
 })
 export class ClientesListComponent implements OnInit {
   clientes$: Observable<Clientes[]>;
@@ -35,18 +35,18 @@ export class ClientesListComponent implements OnInit {
     this.clientes$ = this.clientesService.list()
     .pipe(
       catchError(error => {
-        this.onError('Erro ao carregar Clientes.');
+       // this.onError('Erro ao carregar Clientes.');
         return of([])
       })
     );
 
   }
 
-  onError(errorMsg: string) {
+ /* onError(errorMsg: string) {
     this.dialog.open(ErrorDialogComponent, {
       data: errorMsg
     });
-  }
+  }*/
 
   ngOnInit(): void {
   }

@@ -5,7 +5,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection:ChangeDetectionStrategy.OnPush,
 
   templateUrl: './statistics.component.html',
-  styleUrls: ['./statistics.component.scss']
+  styleUrls: ['./statistics.component.css']
 })
 export class StatisticsComponent implements OnInit {
 
