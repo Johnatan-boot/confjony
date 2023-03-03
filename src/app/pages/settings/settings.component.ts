@@ -5,7 +5,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection:ChangeDetectionStrategy.OnPush,
 
   templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.scss']
+  styleUrls: ['./settings.component.css']
 })
 export class SettingsComponent implements OnInit {
 
