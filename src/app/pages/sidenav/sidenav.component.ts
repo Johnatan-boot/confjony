@@ -12,7 +12,7 @@ interface SideNavToggle {
   changeDetection:ChangeDetectionStrategy.OnPush,
 
   templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.css'],
+  styleUrls: ['./sidenav.component.scss'],
 
 animations: [
   trigger('fadeInOut', [
