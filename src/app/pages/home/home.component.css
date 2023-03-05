@@ -8,6 +8,8 @@
 .carousel{
   border:  2px solid grey;
   border-radius: 12px;
+  position: relative;
+  left: 100px;
 }
 
 .containerPedidos{
@@ -20,13 +22,15 @@
   background-color: rgb(80, 51, 51);
   border:  2px solid grey;
   border-radius: 8px;
+  position: relative;
+  left: 100px;
 }
 
 
 .containerProdutos{
   background-color: rgb(80, 51, 51);
  position: relative;
- left: 378px;
+ left: 478px;
  bottom: 250px;
  height: 250px;
  border:  2px solid grey;
