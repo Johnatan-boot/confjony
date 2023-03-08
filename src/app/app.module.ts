@@ -1,3 +1,5 @@
+import { UsuariosModule } from './pages/usuarios/usuarios.module';
+import { ClientesRoutingModule } from './pages/clientes/clientes-routing.module';
 import { PagamentosModule } from './pages/pagamentos/pagamentos.module';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -31,6 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { PagamentosRoutingModule } from './pages/pagamentos';
 import { ListorcamentosComponent } from './pages/listorcamentos/listorcamentos.component';
+import { ClientesModule } from './pages/clientes';
+import { UsuariosRoutingModule } from './pages/usuarios';
 
 
 @NgModule({
@@ -69,6 +73,10 @@ import { ListorcamentosComponent } from './pages/listorcamentos/listorcamentos.c
     ListPedidosRoutingModule,
     PagamentosModule,
     PagamentosRoutingModule,
+    ClientesModule,
+    ClientesRoutingModule,
+    UsuariosModule,
+    UsuariosRoutingModule,
 
 
 

@@ -5,17 +5,17 @@
 
 .bannerClientes{
   position: relative;
-  bottom: 55px;
-  right: 55px;
+  bottom: 115px;
+  left: 72px;
 }
 
 mat-card{
   background-color: #4E342E;
-  width: 115%;
+  width: 105%;
   position: relative;
-  right: 94px;
-  bottom: 75px;
-  //z-index: -1;
+  right: 14px;
+  bottom: 105px;
+  z-index: -1;
 }
 
 mat-toolbar{
@@ -120,7 +120,7 @@ mat-spinner{
     position: relative;
     right: 74px;
     bottom: 360px;
-    //z-index: -1;
+    z-index: -1;
   }
 
   mat-toolbar{

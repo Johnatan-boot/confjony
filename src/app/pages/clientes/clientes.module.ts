@@ -12,14 +12,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ErrorDialogComponent } from 'src/app/components/errordialog';
 import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
   declarations: [
     ClientesListComponent,
-    ErrorDialogComponent,
 
   ],
   imports: [

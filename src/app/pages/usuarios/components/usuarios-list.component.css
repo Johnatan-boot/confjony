@@ -1,15 +1,16 @@
 .bannerUser{
 position: relative;
-right: 50px;
-bottom: 55px;
+left: 75px;
+bottom: 115px;
 }
 
 mat-card{
   background-color: #4E342E;
   width: 100%;
   position: relative;
-  bottom: 70px;
-  //z-index: -1;
+  bottom: 110px;
+  left: 20px;
+  z-index: -1;
 }
 
 mat-toolbar{
@@ -108,7 +109,7 @@ mat-spinner{
       position: relative;
       right: 70px;
       bottom: 350px;
-      //z-index: -1;
+      z-index: -1;
     }
 
     mat-toolbar{
@@ -133,7 +134,7 @@ mat-spinner{
       margin-top: 5px;
       width: 100px;
       height:290px;
-      //text-align: center;
+      text-align: center;
       background-color: #8D6E63;
       font-family: segoe script;
 
