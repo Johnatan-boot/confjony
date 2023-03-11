@@ -55,7 +55,7 @@ export const navbarData = [
         label: 'Pages'
     },
     {
-        routeLink: 'media',
+        routeLink: 'galeria',
         icon: 'fa fa-camera',
         label: 'Media'
     },

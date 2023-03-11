@@ -13,11 +13,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ErrorDialogComponent } from '../errordialog';
 
 
 @NgModule({
   declarations: [
     ClientesListComponent,
+    ErrorDialogComponent,
 
   ],
   imports: [

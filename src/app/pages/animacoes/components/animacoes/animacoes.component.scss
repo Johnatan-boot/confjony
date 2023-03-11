@@ -1,0 +1,164 @@
+.contentanimacion{
+  position: relative;
+  top: 200px;
+  left: 600px;
+}
+
+
+
+.pacman::before,
+.pacman::after{
+  position: absolute;
+  content: " ";
+  background-color: #ffee07;
+  width: 100px;
+  height: 50px;
+  margin-left: -50px;
+  margin-top: -50px;
+  border-radius: 50px 50px 0 0;
+  animation:  up 0.4s infinite;
+}
+
+.pacman::after{
+  margin-top: -1px;
+  border-radius:  0 0 50px  50px;
+  animation: down 0.4s infinite;
+
+
+}
+
+.olhopacman{
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 3px;
+  position: relative;
+  top: 170px;
+  left: 615px;
+}
+
+.dot{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-top: -5px;
+  margin-left: 30px;
+  border-radius: 50%;
+  background-color: #ffee07;
+  box-shadow: 40px 0 0 #ffee07, 40px 0 0 #ffee07, 80px 0 0 #ffee07,120px 0 0 #ffee07;
+}
+
+@keyframes up{
+  0%,100%{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(-40deg);
+  }
+}
+@keyframes down{
+  0%,100%{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes right_to_left{
+ 100%{
+   margin-left: -10px;
+  }
+  50%{
+    transform: rotate(40deg);
+  }
+}
+
+
+@media(min-width:320px)and (max-width:720px){
+
+  .contentanimacion{
+    position: relative;
+    top: -160px;
+    left: -40px;
+  }
+
+  body{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  .pacman::before,
+  .pacman::after{
+    position: absolute;
+    content: " ";
+    background-color: #ffee07;
+    width: 100px;
+    height: 50px;
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 50px 50px 0 0;
+    animation:  up 0.4s infinite;
+  }
+
+  .pacman::after{
+    margin-top: -1px;
+    border-radius:  0 0 50px  50px;
+    animation: down 0.4s infinite;
+
+
+  }
+
+  .olhopacman{
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 3px;
+    position: relative;
+    top: -190px;
+    left: -18px;
+  }
+
+  .dot{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-top: -5px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: #ffee07;
+    box-shadow: 40px 0 0 #ffee07, 40px 0 0 #ffee07, 80px 0 0 #ffee07,120px 0 0 #ffee07;
+  }
+
+  @keyframes up{
+    0%,100%{
+      transform: rotate(0);
+    }
+    50%{
+      transform: rotate(-40deg);
+    }
+  }
+  @keyframes down{
+    0%,100%{
+      transform: rotate(0);
+    }
+    50%{
+      transform: rotate(40deg);
+    }
+  }
+
+  @keyframes right_to_left{
+   100%{
+     margin-left: -10px;
+    }
+    50%{
+      transform: rotate(40deg);
+    }
+  }
+
+
+}

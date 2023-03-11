@@ -35,6 +35,8 @@ import { PagamentosRoutingModule } from './pages/pagamentos';
 import { ListorcamentosComponent } from './pages/listorcamentos/listorcamentos.component';
 import { ClientesModule } from './pages/clientes';
 import { UsuariosRoutingModule } from './pages/usuarios';
+import { MediaComponent } from './pages/media/media.component';
+import { AnimacoesModule, animacoesRoutingModule } from './pages/animacoes';
 
 
 @NgModule({
@@ -48,6 +50,7 @@ import { UsuariosRoutingModule } from './pages/usuarios';
     DashboardComponent,
     SettingsComponent,
     ListorcamentosComponent,
+    MediaComponent,
   ],
   imports: [
     BrowserModule,
@@ -77,6 +80,8 @@ import { UsuariosRoutingModule } from './pages/usuarios';
     ClientesRoutingModule,
     UsuariosModule,
     UsuariosRoutingModule,
+    AnimacoesModule,
+    animacoesRoutingModule,
 
 
 
@@ -86,6 +91,7 @@ import { UsuariosRoutingModule } from './pages/usuarios';
     AppRoutingModule,
 
   ],
+
 
   providers: [],
   bootstrap: [AppComponent]
