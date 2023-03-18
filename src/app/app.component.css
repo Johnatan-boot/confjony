@@ -1,3 +1,6 @@
+
+
+
 mat-toolbar{
   height: 60px;
   background-color: #726197;
@@ -54,8 +57,8 @@ left: 475px;
   width: 40px;
   background-color: #fa0338;
   position: relative;
-  left: 830px;
-  bottom: 46px;
+  left: 750px;
+  bottom: 79px;
   border: 2px solid gray;
 
 
@@ -65,8 +68,8 @@ left: 475px;
   width: 40px;
   background-color: #20fa03;
   position: relative;
-  left: 835px;
-  bottom: 46px;
+  left: 800px;
+  bottom: 117px;
   border: 2px solid gray;
 
 }
@@ -115,7 +118,7 @@ h6{
   border: 2px solid gray;
   border-radius: 10px;
   position: relative;
-  left: 980px;
+  left: 850px;
   bottom: 40px;
 }
 
@@ -133,4 +136,208 @@ footer{
 
 a{
   text-decoration: none;
+}
+
+
+@media(min-width:320px) and (max-width:770px){
+  mat-toolbar{
+    height: 50px;
+    background-color: #726197;
+    border:  2px solid gray;
+  }
+
+  h1{
+    color: white;
+    font-family: segoe script;
+    font-size: 15px;
+    position: relative;
+    left: 68px;
+  }
+
+
+  .tabs{
+    height: 65px;
+    width: 320px;
+    background-color: #807499;
+    position: relative;
+    bottom: 15px;
+    border:  1px solid  #807499;
+  }
+
+ 
+
+ 
+
+  li
+{
+  position: relative;
+  left: 29px;
+  top: 2px;
+  width: 59px;
+}
+
+
+
+
+
+h2{
+  color: rgb(36, 16, 9);
+  font-family: segoe script;
+  font-size: 9px;
+  margin-right: 4px;
+  position: relative;
+  top: 2px;
+  right: 36px;
+  
+}
+.h2_home{
+  color: rgb(36, 16, 9);
+  font-family: segoe script;
+  font-size: 10px;
+  margin-left: 62px;
+  position: relative;
+  top: 8px;
+  right: 5px;
+  
+}
+.h2_perfil{
+  color: rgb(36, 16, 9);
+  font-family: segoe script;
+  font-size: 10px;
+  margin-left: 12px;
+  margin-right: 20px;
+  position: relative;
+  top: 8px;
+  right: 20px;
+  
+}
+.h2_orcamentos{
+  color: rgb(36, 16, 9);
+  font-family: segoe script;
+  font-size: 10px;
+  margin-left: 22px;
+  margin-right: 20px;
+  position: relative;
+  top: 8px;
+  right: 55px;
+  
+}
+
+.link{
+  text-decoration: none;
+  position: relative;
+  left: 20px;
+  margin-right: 0px;
+
+
+}
+.link_orc{
+  text-decoration: none;
+  position: relative;
+  left: 8px;
+  margin-right: 0px;
+
+
+}
+
+.active{
+  width:55px;
+  height: 30px;
+}
+
+form{
+  position: relative;
+  left: 35px;
+  height: 30px;
+  width: 170px;
+  
+  }
+
+  .btn{
+    background-color: #2adbe7;
+    color: white;
+    font-family: segoe script;
+    border: 2px solid gray;
+    font-size: 9px;
+    padding-bottom: 18px;
+    padding-right: 40px;
+    position: relative;
+    bottom: 0px;
+    right: 6px;
+    width: 10px;
+  }
+
+  .btnLogin{
+    height: 30px;
+    width: 10px;
+    background-color: #fa0338;
+    position: relative;
+    left: 138px;
+    bottom: 35px;
+    border: 2px solid gray;
+  
+  
+  }
+  .btnCadastro{
+    height: 30px;
+    width: 1%;
+    background-color: #20fa03;
+    position: relative;
+    left:138px;
+    bottom: 38px;
+    border: 2px solid gray;
+  
+  }
+  .btncart{
+    background-color: #2adbe7;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    position: relative;
+    left: 245px;
+    bottom: 100px;
+  }
+  
+
+ 
+
+app-sidenav{
+  position: relative;
+  right: 5px;
+  
+}
+
+footer{
+  position: relative;
+  top: 650px;
+}
+
+a{
+  text-decoration: none;
+  
+ 
+ 
+}
+
+.Link_footer{
+position: relative;
+right: 480px;
+bottom: 120px;
+}
+
+h6{
+  font-size: 10px;
+  
+
+}
+
+hr{
+  position: relative;
+  bottom: 210px;
+}
+
+
+
+
+
 }

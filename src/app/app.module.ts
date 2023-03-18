@@ -37,6 +37,7 @@ import { ClientesModule } from './pages/clientes';
 import { UsuariosRoutingModule } from './pages/usuarios';
 import { MediaComponent } from './pages/media/media.component';
 import { AnimacoesModule, animacoesRoutingModule } from './pages/animacoes';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -82,7 +83,7 @@ import { AnimacoesModule, animacoesRoutingModule } from './pages/animacoes';
     UsuariosRoutingModule,
     AnimacoesModule,
     animacoesRoutingModule,
-
+    MatGridListModule,
 
 
 

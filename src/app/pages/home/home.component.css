@@ -70,7 +70,7 @@
   height: 60px;
   width: 60px;
   position: relative;
-  left: 110px;
+  left: 80px;
 }
 
 .card-title{
@@ -86,7 +86,7 @@
 
 .btn{
   position: relative;
-  left: 65px;
+  left: 25px;
   background-color:  rgb(36, 16, 9);
   border:  2px solid grey;
   font-family: segoe script;
@@ -99,3 +99,147 @@
   left: 12px;
   margin-top: 5px;
 }
+
+
+@media(min-width:320px) and (max-width:720px){
+  .carousel{
+    border:  2px solid grey;
+    border-radius: 12px;
+    position: relative;
+    left:120px;
+    width: 130px;
+    height: 100px;
+    margin-top:10px;
+  }
+
+  img{
+    height: 100px;
+    width: 50px;
+  }
+
+  .containerPedidos{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-family: segoe script;
+    margin-top: 10px;
+    height: 105px;
+    width: 135px;
+    background-color: rgb(80, 51, 51);
+    border:  2px solid grey;
+    border-radius: 8px;
+    position: relative;
+    left: 250px;
+    bottom: 226px;
+  }
+
+
+  .containerProdutos{
+    background-color: rgb(80, 51, 51);
+   position: relative;
+   left: 250px;
+   bottom: 220px;
+   height: 105px;
+   width: 135px;
+   border:  2px solid grey;
+   border-radius: 8px;
+   text-align: center;
+   color: white;
+   font-size: 13px;
+   font-family: segoe script;
+
+  }
+
+  .sidebarNovidades{
+  position:relative;
+  left:130px;
+  bottom:210px;
+  background-color: #6b51a5;
+  width: 267px;
+  height: 225px;
+}
+
+.title_novidades{
+  text-align: center;
+  font-family: segoe script;
+  color: rgb(36, 16, 9);
+  font-size: 10px;
+
+
+}
+
+
+.card{
+  position: relative;
+  left: 8px;
+  background-color:  #2adbe7;
+  width:100px;
+}
+
+.card-img-top{
+  height: 60px;
+  width: 60px;
+  position: relative;
+  left: 80px;
+}
+
+.card-title{
+  text-align: center;
+  color: white;
+  font-family: segoe script;
+  font-size: 11px;
+
+}
+
+.card-text{
+  text-align: center;
+  font-size: 9px;
+
+}
+
+.btn{
+  position: relative;
+  left: 45px;
+  background-color:  rgb(36, 16, 9);
+  border:  2px solid grey;
+  font-family: segoe script;
+  height: 30px;
+  font-size: 9px;
+
+
+}
+
+hr{
+  position: relative;
+  bottom: 600px;
+}
+
+
+
+
+
+
+}
+
+
+/*
+unidades medida css
+px - Layout fixo
+% layout fluido
+auto = automatico
+vh viewport Height
+vw = viewport width
+
+
+textos fixos
+
+1 px  = 0.75pt
+16px = 12pt
+
+e Fluidos
+
+cada 1em multiplica 3x a medida ou o root
+
+
+
+*/

@@ -3,77 +3,88 @@
   </mat-toolbar>
  <div class="tabs">
 <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-	<li [ngbNavItem]="1">
-		<a ngbNavLink>
+  <li [ngbNavItem]="1">
+    <a ngbNavLink>
       <a class="link" routerLink="/home">
         <h2>Home</h2>
       </a>
   </a>
-		<ng-template ngbNavContent>
+    <ng-template ngbNavContent>
 
-		</ng-template>
-	</li>
-	<li [ngbNavItem]="2">
-		<a ngbNavLink>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink>
       <a class="link" routerLink="/perfil">
         <h2>Perfil</h2></a>
       </a>
-		<ng-template ngbNavContent>
+    <ng-template ngbNavContent>
 
-		</ng-template>
-	</li>
-	<li [ngbNavItem]="3">
-		<a ngbNavLink>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink>
     <a class="link" routerLink="products">
       <h2>Produtos</h2></a>
     </a>
-		<ng-template ngbNavContent>
+    <ng-template ngbNavContent>
 
-		</ng-template>
-	</li>
-	<li [ngbNavItem]="4">
-		<a ngbNavLink>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="4">
+    <a ngbNavLink>
     <a class="link" routerLink="/list-pedidos">
       <h2>Pedidos</h2></a>
     </a>
-		<ng-template ngbNavContent>
+    <ng-template ngbNavContent>
 
-		</ng-template>
-	</li>
-	<li [ngbNavItem]="5">
-		<a ngbNavLink>
-    <a class="link" routerLink="/orcamentos">
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="5">
+    <a ngbNavLink>
+    <a class="link_orc" routerLink="/orcamentos">
       <h2>Orcamentos</h2></a>
     </a>
-		<ng-template ngbNavContent>
+    <ng-template ngbNavContent>
 
-		</ng-template>
-	</li>
+    </ng-template>
+  </li>
   <form class="d-flex">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn" type="submit">Search</button>
+    <button style="width:5px"  class="btn btn" type="submit">Search</button>
   </form>
 </ul>
 
-<button routerLink="cart" class="btncart ">
-  <i style="font-size: 30px;" class="fa fa-cart-plus"></i>
-  <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
-</button>
-<button routerLink="/login" class="btn btn btnLogin">
-  <i class="fa fa-sign-out" aria-hidden="true"></i>
-</button>
-<button routerLink="/cadastro" class="btn btn btnCadastro">
-  <i class="fa fa-plus" aria-hidden="true"></i>
-</button>
+<div class="container">
+  <div class="row">
+    <div class="col-sm col-md-2 col-xl-1">
+      <button routerLink="cart" class="btncart ">
+        <i style="font-size: 20px; width:17px" class="fa fa-cart-plus"></i>
+        <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
+      <button style="width:5px"  routerLink="/login" 
+      class="btn btn btnLogin">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+      </button>
+      <button routerLink="/cadastro" class="btn btn btnCadastro">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div>
 </div>
 <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
 
 <app-sidenav></app-sidenav>
 
 <footer>
   <hr>
-<a routerLink="/home"><h6>Home</h6></a>
-<a routerLink="/perfil"><h6>Perfil</h6></a>
-<a routerLink="products"><h6>Produtos</h6></a>
+<a class="Link_footer" routerLink="/home"><h6>Home</h6></a>
+<a class="Link_footer" routerLink="/perfil"><h6>Perfil</h6></a>
+<a  class="Link_footer"routerLink="products"><h6>Produtos</h6></a>
 </footer>
 <router-outlet></router-outlet>
+
+
+

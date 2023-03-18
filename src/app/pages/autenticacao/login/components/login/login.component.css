@@ -82,3 +82,27 @@ hr{
   bottom: 90px;
 
 }
+
+@media(min-width:320px) and (max-width:720px){
+ .bannerLogin{
+  width: 300px;
+  height: 200px;
+  position: relative;
+  bottom: 100px;
+  position: relative;
+  left: 30px;
+ }
+
+ .container_login {
+ position: relative;
+ right: 464px;
+ 
+
+}
+
+.card{
+  width: 300px;
+}
+
+}
+
