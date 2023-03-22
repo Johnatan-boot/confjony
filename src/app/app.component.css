@@ -54,11 +54,11 @@ left: 475px;
 
 .btnLogin{
   height: 38px;
-  width: 40px;
+  width: 70px;
   background-color: #fa0338;
   position: relative;
   left: 750px;
-  bottom: 79px;
+  bottom: 82px;
   border: 2px solid gray;
 
 
@@ -69,7 +69,7 @@ left: 475px;
   background-color: #20fa03;
   position: relative;
   left: 800px;
-  bottom: 117px;
+  bottom: 120px;
   border: 2px solid gray;
 
 }
@@ -113,13 +113,14 @@ h6{
 }
 
 .btncart{
+  height: 40px;
   background-color: #2adbe7;
   color: white;
   border: 2px solid gray;
   border-radius: 10px;
   position: relative;
   left: 850px;
-  bottom: 40px;
+  bottom: 43px;
 }
 
 hr{
@@ -272,7 +273,7 @@ form{
     width: 10px;
     background-color: #fa0338;
     position: relative;
-    left: 138px;
+    left: 136px;
     bottom: 35px;
     border: 2px solid gray;
   
@@ -284,11 +285,12 @@ form{
     background-color: #20fa03;
     position: relative;
     left:138px;
-    bottom: 38px;
+    bottom: 35px;
     border: 2px solid gray;
   
   }
   .btncart{
+    height: 30px;
     background-color: #2adbe7;
     color: white;
     border: 2px solid gray;

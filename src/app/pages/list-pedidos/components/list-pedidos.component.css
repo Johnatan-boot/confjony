@@ -8,6 +8,14 @@
   position: relative;
   bottom: 220px;
 }
+
+ mat-card {
+
+   
+    position: relative;
+    bottom: 50px;
+  }
+
 .table_h3{
   text-align: center;
   color: rgb(226, 21, 21);
@@ -48,4 +56,74 @@
 .label7,.label8 {
   position: relative;
   left: 150px;
+}
+
+@media (min-width: 320px) and (max-width:768px){
+  .img_pedidos{
+    width:270px;
+    height: 200px;
+    position: relative;
+    left: 40px;
+    bottom: 100px;
+  }
+
+  .container{
+    position: relative;
+    bottom: 82px;
+    left: 10px;
+    width: 280px;
+    height: 200px;
+  }
+
+  .table_h3{
+    text-align: center;
+    color: rgb(226, 21, 21);
+    font-family: segoe script;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    bottom: 14px;
+  }
+
+  mat-card {
+
+    height: 225px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  
+
+  .container-table{
+    overflow-x: auto;
+    width: 220px;
+    height: 130px;
+    margin-right: 0px;
+  }
+
+  mat-toolbar{
+    height: 20px;
+  }
+
+  th,td{
+    font-size: 9px;
+    width: 200px;
+  }
+
+
+ 
+
+ 
+
+  .container-button{
+    position: relative;
+    top: 15px;
+    left: 20px;
+  }
+
+  .btn-success,.btn-primary,.btn-danger{
+    height: 30px;
+    width: 60px;
+    font-size: 9px;
+  }
 }
