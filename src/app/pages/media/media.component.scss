@@ -35,3 +35,64 @@ mat-card{
   bottom: 930px;
 
 }
+
+@media(min-width:320px) and (max-width:768px){
+  .bannerMedia{
+    position: relative;
+    left: 40px;
+    bottom: 100px;
+    height: 200px;
+    width: 270px;
+  }
+
+  .galeria{
+    margin-bottom: 23px;
+    margin-top: 13px;
+    position: relative;
+    left: 150px;
+    bottom: 100px;
+    color: white;
+    font-family: segoe script;
+    font-size: 11px;
+  }
+
+  mat-card{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 110px;
+    left: 30px;
+    background-color: rgb(190, 148, 131);
+  }
+
+  img{
+    height:60px;
+    width: 60px;
+    position: relative;
+    right: 6px;
+    bottom: 6px;
+  }
+  .card-2, .card-3{
+    position: relative;
+    left: 36px;
+    bottom: 34px;
+  }
+  .card-2{
+    position: relative;
+    left: 125px;
+    bottom: 190px;
+  }
+   .card-3{
+    position: relative;
+    left: 218px;
+    bottom: 270px;
+  }
+
+  .row-2{
+    position: relative;
+    bottom: 143px;
+
+
+  }
+
+}

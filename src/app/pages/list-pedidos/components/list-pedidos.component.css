@@ -11,7 +11,7 @@
 
  mat-card {
 
-   
+
     position: relative;
     bottom: 50px;
   }
@@ -28,6 +28,11 @@
 
 .btn{
   margin-right: 6px;
+  width: 1050px;
+  height: 35px;
+  margin-bottom: 3px;
+  position: relative;
+  left: 30px;
 }
 
 .label2,.label3,
@@ -92,7 +97,7 @@
     bottom: 20px;
   }
 
-  
+
 
   .container-table{
     overflow-x: auto;
@@ -110,10 +115,17 @@
     width: 200px;
   }
 
+  .btn{
 
- 
 
- 
+  position: relative;
+  left: 3px;
+}
+
+
+
+
+
 
   .container-button{
     position: relative;

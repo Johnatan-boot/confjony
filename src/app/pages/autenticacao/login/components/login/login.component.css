@@ -96,12 +96,14 @@ hr{
  .container_login {
  position: relative;
  right: 464px;
- 
+
 
 }
 
 .card{
   width: 300px;
+  position: relative;
+  bottom: 110px;
 }
 
 }

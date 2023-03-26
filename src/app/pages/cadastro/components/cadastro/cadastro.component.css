@@ -4,7 +4,9 @@
   width: 1348px;
 }
 
-.card{
+.card {
+  width:600px;
+  height:480px;
   position: relative;
   left: 298px;
   bottom: 320px;
@@ -39,4 +41,47 @@
 
 .email{
   height: 30px;
+}
+
+@media (min-width:320px) and (max-width:320px) {
+  .bannerCadastro{
+    position: relative;
+    bottom: 92px;
+    width: 320px;
+    height:100px;
+  }
+
+
+  .card {
+    width: 280px;
+    height: 370px;
+    position: relative;
+    left: 28px;
+    bottom: 110px;
+    background-color: #3b1f1f;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 18px;
+  }
+
+  .card-img-top{
+    height:100px;
+    width:275px;
+    border-radius:12px;
+
+  }
+
+  .card-title{
+    font-size: 10px;
+  }
+
+  .btn{
+    background-color: #2adbe7;
+    font-family: segoe script;
+    position: relative;
+    left: -5px;
+    width: 260px;
+
+  }
+
 }

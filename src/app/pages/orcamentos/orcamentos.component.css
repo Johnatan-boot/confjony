@@ -90,11 +90,17 @@ label{
   bottom: 52px;
 }
 
+.containerRadButton{
+  position:relative;
+  left:400px;
+  bottom: 28px;
+}
+
 .rodape_form{
   position: relative;
   bottom: 85px;
   left: 350px;
-  
+
 }
 
 .textarea{
@@ -109,7 +115,7 @@ label{
   color: white;
   font-family: segoe script;
   position: relative;
-  top: 90px;
+  top: 80px;
 
 }
 
@@ -219,7 +225,7 @@ select{
     width: 100px;
 
   }
-  
+
   .input_tel{
     position: relative;
     bottom: 70px;
@@ -230,6 +236,12 @@ select{
 
   }
 
+  .containerRadButton{
+    position:relative;
+    left:-20px;
+    bottom: 28px;
+  }
+
   .select_Sabor{
     color: white;
     font-family: segoe script;
@@ -237,7 +249,7 @@ select{
     left: 120px;
     bottom: 60px;
     font-size: 9px;
-  
+
   }
 
   select{
@@ -254,12 +266,12 @@ select{
     font-family: segoe script;
     position: relative;
     left: -150px;
-    bottom: 20px;
+    bottom: 0px;
     font-size: 9px;
-  
+
   }
 
-  
+
 .containerRadButton{
   position: relative;
   right: 100px;
@@ -285,7 +297,7 @@ select{
 
 
   .rodape_form{
-   
+
     position: relative;
     bottom: 90px;
     left: 335px;
@@ -306,11 +318,11 @@ select{
     right: 360px;
     width: 250px;
     border-radius: 20px;
-  
+
   }
-  
-  
- 
+
+
+
 form{
   width: 320px;
 }
