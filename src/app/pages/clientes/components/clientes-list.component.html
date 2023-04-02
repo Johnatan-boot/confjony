@@ -6,108 +6,46 @@ alt="banner confeitaria" width="1278px" height="300px">
     <div class="col-sm-12  col-md-8 col-xl-12">
       <mat-card >
         <mat-toolbar><h3>Clientes</h3></mat-toolbar>
-        <div *ngIf="clientes$ | async as clientes; else loading">
-<div class="table-responsive-sm">
-<table mat-table [dataSource]="clientes" class=" table col-sm-2  col-md-8 col-xl-12">
-
-    <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-
-
-         <!-- Position Column -->
-    <div class="containercelula" >
-      <ng-container matColumnDef="nome">
-        <th scope="col-1" mat-header-cell *matHeaderCellDef> Nome </th>
-        <td id="td_nome" mat-cell *matCellDef="let cliente"> {{cliente.nome}} </td>
-      </ng-container>
-    </div>
-
-    <!-- Name Column -->
-    <ng-container matColumnDef="cpf">
-      <th scope="col-1" mat-header-cell *matHeaderCellDef> CPF </th>
-      <td mat-cell *matCellDef="let cliente"> {{cliente.cpf}} </td>
-    </ng-container>
-    <!-- Category Column -->
-    <ng-container matColumnDef="telefone">
-      <th scope="col-1" mat-header-cell *matHeaderCellDef><p>Telefone</p></th>
-      <td mat-cell *matCellDef="let cliente">{{ cliente.telefone }}
-        <!--<mat-icon aria-hidden="false" aria-label="Categoria do Curso">{{ course.category | category }}</mat-icon>-->
-      </td>
-    </ng-container>
-
-    <!-- Category Column -->
-    <ng-container matColumnDef="endereco">
-      <th scope="col-1" mat-header-cell *matHeaderCellDef>Endereco</th>
-      <td mat-cell *matCellDef="let cliente">{{ cliente.endereco }}
-        <!--<mat-icon aria-hidden="false" aria-label="Categoria do Curso">{{ course.category | category }}</mat-icon>-->
-      </td>
-    </ng-container>
-
-
-
-         <!-- Category Column -->
-    <div class="container-sm">
-      <ng-container matColumnDef="cidade">
-        <th scope="col-1" mat-header-cell *matHeaderCellDef>Cidade</th>
-        <td mat-cell *matCellDef="let cliente">{{ cliente.cidade }}
-          <!--<mat-icon aria-hidden="false" aria-label="Categoria do Curso">{{ course.category | category }}</mat-icon>-->
-        </td>
-      </ng-container>
-      <!-- Category Column -->
-      <ng-container matColumnDef="estado">
-        <th scope="col-1" mat-header-cell *matHeaderCellDef>Estado</th>
-        <td mat-cell *matCellDef="let cliente">{{ cliente.estado }}
-          <!--<mat-icon aria-hidden="false" aria-label="Categoria do Curso">{{ course.category | category }}</mat-icon>-->
-        </td>
-      </ng-container>
-      <!-- Category Column -->
-      <ng-container matColumnDef="email">
-        <th scope="col-1" id="th_email" mat-header-cell *matHeaderCellDef>Email</th>
-        <td mat-cell *matCellDef="let cliente">{{ cliente.email }}
-          <!--<mat-icon aria-hidden="false" aria-label="Categoria do Curso">{{ course.category | category }}</mat-icon>-->
-        </td>
-      </ng-container>
-    </div>
-    <!-- Name Column -->
-    <ng-container matColumnDef="cnpj">
-      <th scope="col-1" mat-header-cell *matHeaderCellDef> CNPJ </th>
-      <td mat-cell *matCellDef="let cliente"> {{cliente.cnpj}} </td>
-    </ng-container>
-
-     <!-- Actions Column -->
-     <ng-container id="columnActions" matColumnDef="actions">
-      <mat-header-cell *matHeaderCellDef>
-        <button class="btnadicionar" mat-mini-fab  class="btnadicionar" aria-label="Adicionar um cliente">
-          <mat-icon (click)="onAdd()" >add</mat-icon>
-        </button>
-      </mat-header-cell>
-
-      <mat-cell *matCellDef="let cliente">
-        <button mat-icon-button class="btneditar" aria-label="Editar Cliente">
-          <mat-icon>edit</mat-icon>
-        </button>
-
-        <button  mat-icon-button class="btndeletar" aria-label="Remover cliente">
-          <mat-icon>delete</mat-icon>
-        </button>
-      </mat-cell>
-
-    </ng-container>
-
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
-</div>
-
-
-</div>
-<ng-template #loading>
-  <div class="loading-spinner">
-    <mat-spinner></mat-spinner>
-  </div>
-</ng-template>
-
+        <table>
+          <caption>
+            <div class="container">
+              <div class="row">
+                <button class="btn btnadicionar">cadastrar</button>
+                <button class="btn btneditar">Editar</button>
+                <button class="btn btndeletar">Deletar</button>              </div>
+            </div>
+          </caption>
+       <thead>
+          <tr>
+              <th scope="col">Posição</th>
+             <th scope="col">Estado</th> 
+             <th style="width: 90px;" scope="col">População</th>
+             
+          </tr>
+       </thead>
+       <tbody>
+          <tr>
+              <td class="nump">01</td>
+              <td>São Paulo</td>
+              <td class="num">41 262 199</td>
+          </tr>
+          <tr>
+              <td class="nump">02</td>
+              <td>Minas Gerais</td>
+              <td class="num">19 597 330</td>
+          </tr>
+          
+       </tbody>
+       <tfoot>
+          <tr>
+              <th></th>
+              <th scope="row">Total de habitantes</th>
+              <td class="num"><strong>186 836 512</strong></td>
+          </tr>
+          
+       </tfoot>
+      </table>
+        
 </mat-card>
 </div>
 </div>
