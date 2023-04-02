@@ -6,54 +6,59 @@ width="1270px">
     <div class="col-sm  col-md-8 col-xl-12">
       <mat-card >
         <mat-toolbar><h3>Usuarios</h3></mat-toolbar>
-        <div *ngIf="usuarios$ | async as usuarios; else loading">
-<table mat-table [dataSource]="usuarios" class="col-sm-1  col-md-8 col-xl-12">
-
-    <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-
-
-
-    <!-- Name Column -->
-    <ng-container matColumnDef="email">
-      <th class="themail" mat-header-cell *matHeaderCellDef> Email </th>
-      <td class="tdemail" mat-cell *matCellDef="let usuario"> {{usuario.email}} </td>
-    </ng-container>
-    <!-- Name Column -->
-    <ng-container matColumnDef="password">
-      <th class="thsenha" mat-header-cell *matHeaderCellDef> Senha </th>
-      <td mat-cell *matCellDef="let usuario"> {{usuario.password}} </td>
-    </ng-container>
-     <!-- Actions Column -->
-     <ng-container matColumnDef="actions">
-      <mat-header-cell *matHeaderCellDef>
-        <button class="btnadicionar" mat-mini-fab  class="btnadicionar" aria-label="Adicionar um cliente">
-          <mat-icon (click)="onAdd()" >add</mat-icon>
-        </button>
-      </mat-header-cell>
-
-      <mat-cell *matCellDef="let cliente">
-        <button mat-icon-button class="btneditar" aria-label="Editar Cliente">
-          <mat-icon>edit</mat-icon>
-        </button>
-
-        <button  mat-icon-button class="btndeletar" aria-label="Remover cliente">
-          <mat-icon>delete</mat-icon>
-        </button>
-      </mat-cell>
-
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
-</div>
-<ng-template #loading>
-  <div class="loading-spinner">
-    <mat-spinner></mat-spinner>
-  </div>
-</ng-template>
-
+        <div *ngIf="usuarios$ | async as usuario; else loading">
+        <table>
+          <caption>
+            <div class="container">
+              <div class="row">
+                <button class="btn btnadicionar">cadastrar</button>
+                <button class="btn btneditar">Editar</button>
+                <button class="btn btndeletar">Deletar</button>              </div>
+            </div>
+          </caption>
+       <thead>
+          <tr>
+              <th scope="col">Nome</th>
+             <th scope="col">Email</th> 
+             <th style="width: 90px;" scope="col">Senha</th>
+             
+          </tr>
+       </thead>
+       <tbody>
+          <tr>
+              <td class="nump" 
+              *matCellDef="let usuario">
+              {{usuario.nome}}</td>
+              <td  *matCellDef="let usuario">
+                {{usuario.email}}</td>
+              <td class="num">41 262 199</td>
+          </tr>
+          <tr>
+              <td class="nump" *matCellDef="let usuario">
+                {{usuario.password}}</td>
+              <td>Minas Gerais</td>
+              <td class="num">19 597 330</td>
+          </tr>
+          
+       </tbody>
+       <tfoot>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          <tr>
+              <th></th>
+              <th scope="row">Total de habitantes</th>
+              <td class="num"><strong>186 836 512</strong></td>
+          </tr>
+          
+       </tfoot>
+      </table>
+      </div>
+      <ng-template #loading>
+        <div class="loading-spinner">
+          <mat-spinner></mat-spinner>
+        </div>
+      </ng-template>
+        
 </mat-card>
 </div>
 </div>

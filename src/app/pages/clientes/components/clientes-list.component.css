@@ -9,7 +9,7 @@ mat-card{
   width: 105%;
   position: relative;
   right: 14px;
-  bottom: 135px;
+  bottom: 185px;
   z-index: 1;
 }
 
@@ -19,18 +19,25 @@ mat-toolbar{
   color: white;
   border-radius: 10px;
   text-align: center;
+  height: 30px;
+  position: relative;
+  bottom: 10px;
 }
 
 h3{
   font-family: segoe script;
   color: white;
   position: relative;
-  left: 480px;
+  left: 490px;
+  top: 5px;
+  font-size: 15px;
+
 }
 
 table{
   background-color: #d8beb6;
   width: 1200px;
+  height: 100px;
   border-collapse: collapse;
   max-width: 1140px;
   margin: auto;
@@ -70,21 +77,32 @@ tbody > tr:nth-child(odd){
 .btnadicionar{
   background-color: #76FF03;
   position: relative;
-  left: 80px;
+  left: 0px;
+  color: white;
+  font-family: segoe script;
+  padding-right: 50px;
+
 }
 
 .btneditar{
   background-color: #00E5FF;
   color: white;
   position: relative;
-  left: 60px;
+  left: 0px;
+  font-family: segoe script;
+  padding-right: 50px;
+
+
 }
 
 .btndeletar{
   background-color: #D50000;
   color: white;
   position: relative;
-  left: 60px;
+  left: 0px;
+  font-family: segoe script;
+  padding-right: 50px;
+
 
 }
 
@@ -180,11 +198,13 @@ mat-spinner{
   .btnadicionar{
     background-color: #76FF03;
     position: relative;
+    left: 80px;
     margin-left: -80px; 
     color: white;
     font-size: 9px;
     height: 28px;
     margin-bottom: 2px;
+    padding-left: 60px;
   
   }
   
@@ -196,6 +216,8 @@ mat-spinner{
     font-size: 9px;
     height: 28px;
     margin-bottom: 2px;
+    padding-left: 60px;
+
 
   }
 
@@ -207,6 +229,7 @@ mat-spinner{
     font-size: 9px;
     height: 28px;
     margin-bottom: 2px;
+    padding-left: 60px;
 
 
   }

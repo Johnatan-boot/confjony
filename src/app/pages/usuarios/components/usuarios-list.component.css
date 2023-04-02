@@ -1,16 +1,21 @@
+
+
+
 .bannerUser{
-position: relative;
-left: 75px;
-bottom: 115px;
-}
+  position: relative;
+  left: 75px;
+  bottom: 115px;
+  }
+  
+
 
 mat-card{
   background-color: #4E342E;
-  width: 100%;
+  width: 105%;
   position: relative;
-  bottom: 110px;
-  left: 20px;
-  z-index: -1;
+  right: 14px;
+  bottom: 185px;
+  z-index: 1;
 }
 
 mat-toolbar{
@@ -19,178 +24,226 @@ mat-toolbar{
   color: white;
   border-radius: 10px;
   text-align: center;
+  height: 30px;
+  position: relative;
+  bottom: 10px;
 }
 
 h3{
   font-family: segoe script;
   color: white;
   position: relative;
-  left: 480px;
-}
-
-.container table{
-  margin-top: 5px;
-  width: 100%;
-  text-align: center;
-  background-color: #8D6E63;
-  font-family: segoe script;
+  left: 490px;
+  top: 5px;
+  font-size: 15px;
 
 }
 
 table{
-  border-radius: 20px;
-
-}
-
-.thsenha{
+  background-color: #d8beb6;
+  width: 1200px;
+  height: 100px;
+  border-collapse: collapse;
+  max-width: 1140px;
+  margin: auto;
   position: relative;
-  left: 80px;
+  font-size: 11px;
+ 
 }
-.thid{
-  position: relative;
-  left: 33px;
+td, th{
+  border: 1px solid black;
+  padding: 10px;
 }
-.themail{
-  position: relative;
-  left: 183px;
-}
-
-.tdemail{
-  position: relative;
-  left: 10px;
-}
-
-table th, td{
-  border-radius: 20px;
-
+thead > tr > th{
+  position: sticky;
+  top: -1px;
+  background-color:#d8beb6 ;
+} 
+thead, tfoot{
+  background-color: #d8beb6;
   color: white;
+}
+td.num{
+  text-align: right;
+}
+td.nump{
+  text-align: center;
+}
+caption{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #d8beb6;
+}
+tbody > tr:nth-child(odd){
+  background-color: #d8beb6;
 }
 
 .btnadicionar{
   background-color: #76FF03;
+  position: relative;
+  left: 0px;
+  color: white;
+  font-family: segoe script;
+  padding-right: 50px;
+
 }
 
 .btneditar{
   background-color: #00E5FF;
   color: white;
+  position: relative;
+  left: 0px;
+  font-family: segoe script;
+  padding-right: 50px;
+
+
 }
 
 .btndeletar{
   background-color: #D50000;
   color: white;
+  position: relative;
+  left: 0px;
+  font-family: segoe script;
+  padding-right: 50px;
+
 
 }
 
 mat-spinner{
   position: relative;
-  left: 450px;
+  left: 470px;
 }
 
-@media(min-width:320px) and (max-width:720px){
+@media(min-width:320px) and (max-width:320px){
   .bannerUser{
-    width:250px;
+    width:280px;
     height:100px;
     position: relative;
-    right: 60px;
-    bottom: 365px;
+    left: 40px;
+    bottom: 100px;
     }
+  h3{
+    font-family: segoe script;
+    font-size: 9px;
+    color: white;
+    position: relative;
+    left: 100px;
+  }
+  mat-card{
+    background-color: #4E342E;
+    width: 280px;
+    height: 299.5px;
+    position: relative;
+    left: 25px;
+    bottom: 100px;
+    z-index: -1;
+  }
 
-    h3{
-      font-family: segoe script;
-      color: white;
-      position: relative;
-      right: 160px;
-    }
+  mat-toolbar{
+    background-color:#6200EA;
+    font-family: segoe script;
+    height:20px;
+    width: 270px;
+    position:relative;
+    bottom:10px;
+    right: 10px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+  table{
+    background-color: #d8beb6;
+    width: 270px;
+    height: 8%;
+    border-collapse: collapse;
+    max-width: 1140px;
+    margin: auto;
+    position: relative;
+    right: 10px;
+    bottom: 6px;
+    font-size: 11px;
+   
+  }
+  td, th{
+    border: 1px solid black;
+    padding: 10px;
+  }
+  thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color:#d8beb6 ;
+  } 
+  thead, tfoot{
+    background-color: #d8beb6;
+    color: white;
+  }
+  td.num{
+    text-align: right;
+  }
+  td.nump{
+    text-align: center;
+  }
+  caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #d8beb6;
+    
+  }
+  tbody > tr:nth-child(odd){
+    background-color: #d8beb6;
+  }
 
-    mat-card{
-      background-color: #4E342E;
-      width: 250px;
-      height:350px;
-      position: relative;
-      right: 70px;
-      bottom: 350px;
-      z-index: -1;
-    }
-
-    mat-toolbar{
-      height:15px;
-      background-color:#6200EA;
-      font-family: segoe script;
-      color: white;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    h3{
-      font-family: segoe script;
-      color: white;
-      position: relative;
-      left: 480px;
-    }
-
-    .container table{
-      position:relative;
-      right:30px;
-      margin-top: 5px;
-      width: 100px;
-      height:290px;
-      text-align: center;
-      background-color: #8D6E63;
-      font-family: segoe script;
-
-    }
-
-    table{
-      border-radius: 20px;
-      width: 100px;
+  .btn{
+    margin-right: 4px;
+  }
+  
+  .btnadicionar{
+    background-color: #76FF03;
+    position: relative;
+    left: 80px;
+    margin-left: -80px; 
+    color: white;
+    font-size: 9px;
+    height: 28px;
+    margin-bottom: 2px;
+    padding-left: 60px;
+  
+  }
+  
+.btneditar{
+    background-color: #00E5FF;
+    color: white;
+    position: relative;
+    left: 0px;
+    font-size: 9px;
+    height: 28px;
+    margin-bottom: 2px;
+    padding-left: 60px;
 
 
-    }
+  }
 
-    .thsenha{
-      position: relative;
-      left: 80px;
-    }
-    .thid{
-      position: relative;
-      left: 33px;
-    }
-    .themail{
-      width:20px;
-      position: relative;
-      left: 183px;
-    }
+  .btndeletar{
+    background-color: #D50000;
+    color: white;
+    position: relative;
+    left: 0px;
+    font-size: 9px;
+    height: 28px;
+    margin-bottom: 2px;
+    padding-left: 60px;
 
-    .tdemail{
-      position: relative;
-      left: 10px;
-      width:20px;
 
-    }
-
-    table th, td{
-      border-radius: 20px;
-      width:80px;
-
-      color: white;
-    }
-
-    .btnadicionar{
-      background-color: #76FF03;
-    }
-
-    .btneditar{
-      background-color: #00E5FF;
-      color: white;
-    }
-
-    .btndeletar{
-      background-color: #D50000;
-      color: white;
-
-    }
-
+  }
 }
+
+
+
+
+
 
 
 

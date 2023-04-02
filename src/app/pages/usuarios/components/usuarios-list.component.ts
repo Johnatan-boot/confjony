@@ -16,12 +16,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class UsuariosListComponent implements OnInit {
   usuarios$: Observable<User[]>;
 
- /*clientes: Clientes[] = [
-  {_id:'1',nome:'johnatan',cpf:'123456789',
-  telefone:'2222-4444',endereco:'rua do johnatan',cidade:'Taboao Da Serra',estado:'SP',email:'johnatan@mail.com'},
-  {_id:'2',nome:'Lara',cpf:'123456789',
-  telefone:'2222-4444',endereco:'rua da Lara',cidade:'Taboao Da Serra',estado:'SP',email:'lara@mail.com'}
- ];*/
+ 
 
   displayedColumns: string[] = ['email','password','actions'];
 

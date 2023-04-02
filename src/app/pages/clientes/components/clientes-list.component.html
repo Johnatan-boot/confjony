@@ -6,7 +6,8 @@ alt="banner confeitaria" width="1278px" height="300px">
     <div class="col-sm-12  col-md-8 col-xl-12">
       <mat-card >
         <mat-toolbar><h3>Clientes</h3></mat-toolbar>
-        <table>
+        <div *ngIf="clientes$ | async as clientes; else loading">
+        <table  [dataSource]="clientes">
           <caption>
             <div class="container">
               <div class="row">
@@ -17,20 +18,24 @@ alt="banner confeitaria" width="1278px" height="300px">
           </caption>
        <thead>
           <tr>
-              <th scope="col">Posição</th>
-             <th scope="col">Estado</th> 
-             <th style="width: 90px;" scope="col">População</th>
+              <th scope="col">Nome</th>
+             <th scope="col">Endereco</th> 
+             <th style="width: 90px;" scope="col">Telefone</th>
              
           </tr>
        </thead>
        <tbody>
           <tr>
-              <td class="nump">01</td>
-              <td>São Paulo</td>
+              <td class="nump" *matCellDef="let cliente">
+                {{cliente.nome}}</td>
+              <td *matCellDef="let cliente">
+                {{ cliente.endereco }}</td>
               <td class="num">41 262 199</td>
           </tr>
           <tr>
-              <td class="nump">02</td>
+              <td class="nump" 
+              *matCellDef="let cliente">
+              {{ cliente.telefone }}</td>
               <td>Minas Gerais</td>
               <td class="num">19 597 330</td>
           </tr>
@@ -44,9 +49,17 @@ alt="banner confeitaria" width="1278px" height="300px">
           </tr>
           
        </tfoot>
+       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
-        
+    </div>
+    <ng-template #loading>
+      <div class="loading-spinner">
+        <mat-spinner></mat-spinner>
+      </div>
+    </ng-template>
 </mat-card>
+
 </div>
 </div>
 </div>
